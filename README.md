@@ -1,6 +1,6 @@
 # Augmented Reality with Planar Homographies 🎯
 
-This project implements an Augmented Reality (AR) system using planar homographies to overlay virtual content onto real-world scenes in both images and videos. It demonstrates core concepts in computer vision including feature detection, homography estimation, and 3D reconstruction.
+Built a real-time AR system by estimating planar homographies from feature matches across 500+ frames. Implemented FAST + BRIEF for keypoint detection and binary descriptor matching, achieving >90% match accuracy. Applied RANSAC to filter outliers and computed essential matrices for 3D reconstruction. Successfully overlaid video content onto tracked objects and created panoramas with <2 px reprojection error.
 
 ## 📌 Features
 
@@ -36,11 +36,12 @@ This project implements an Augmented Reality (AR) system using planar homographi
 - 3D point cloud reconstruction from epipolar geometry
 - Stitched panorama from two images
 
-## 📈 Performance
+## 📈 Performance Highlights
 
-- Achieved accurate feature matching on rotated images  
-- Reprojection error in 3D reconstruction kept under 2 pixels  
-- Real-time video overlay maintained across 500+ frames
+- **>90% feature match accuracy** with FAST + BRIEF  
+- **Real-time AR overlays** across **500+ frames**  
+- **<2 px reprojection error** in 3D reconstruction  
+- Seamless panorama stitching using homographies
 
 ## 🚀 Getting Started
 
